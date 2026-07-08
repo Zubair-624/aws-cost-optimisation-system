@@ -205,7 +205,9 @@ aws-cost-optimisation-system/
 │
 └── README.md
 ```
-## Terraform Version
+---
+
+## 🔗 Terraform Version
 
 This project uses **Terraform v1.10.5**
 
@@ -251,6 +253,8 @@ Expected output:
 Terraform v1.10.5
 on linux_amd64
 ```
+
+</details>
 
 ---
 
