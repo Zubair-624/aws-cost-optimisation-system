@@ -205,6 +205,52 @@ aws-cost-optimisation-system/
 │
 └── README.md
 ```
+## Terraform Version
+
+This project uses **Terraform v1.10.5**
+
+<details>
+<summary>How to install Terraform v1.10.5 on WSL / Ubuntu</summary>
+
+### Step 1 - Check if already installed
+
+```bash
+terraform version
+```
+
+If you see `Terraform v1.10.5` you are good to go.
+If not - follow the steps below.
+
+### Step 2 - Install
+
+```bash
+sudo apt update && sudo apt install -y gnupg software-properties-common curl
+```
+
+```bash
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+```
+
+```bash
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
+
+```bash
+sudo apt update
+sudo apt install terraform=1.10.5-1
+```
+
+### Step 3 - Verify
+
+```bash
+terraform version
+```
+
+Expected output:
+```bash
+Terraform v1.10.5
+on linux_amd64
+```
 
 ---
 
