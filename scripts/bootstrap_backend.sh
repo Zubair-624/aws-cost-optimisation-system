@@ -24,7 +24,7 @@ echo "----- [S3] Blocking All Public Access-----"
 aws s3api put-public-access-block \
     --bucket "${BUCKET_NAME}" \
     --public-access-block-configuration \
-    '{BlockPublicAcls:true, BlockPublicPolicy:true, IgnorePublicAcls:true, RestrictPublicBuckets:true}' \
+    '{"BlockPublicAcls":true, "BlockPublicPolicy":true, "IgnorePublicAcls":true, "RestrictPublicBuckets":true}' \
     --region "${AWS_REGION}" \
     --profile "${AWS_PROFILE}"
 
